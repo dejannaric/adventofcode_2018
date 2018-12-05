@@ -1,3 +1,5 @@
+package days.day1;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +13,8 @@ public class Day1Main {
 
     private static void calculateFrequency() {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        File input = new File("input.txt");
         try {
-            FileReader fileReader = new FileReader("day1/src/input.txt");
+            FileReader fileReader = new FileReader("advent/src/days/day1/input.txt");
             BufferedReader br = new BufferedReader(fileReader);
 
             Integer value = 0;
@@ -31,9 +32,8 @@ public class Day1Main {
     }
 
     private static void countDuplicates() {
-        File input = new File("input.txt");
         try {
-            FileReader fileReader = new FileReader("day1/src/input.txt");
+            FileReader fileReader = new FileReader("advent/src/days/day1/input.txt");
             BufferedReader br = new BufferedReader(fileReader);
 
             String line;
