@@ -58,7 +58,7 @@ public class Day2Main {
             BufferedReader br = new BufferedReader(fileReader);
 
             String line;
-            LinkedList<String> listOfWords = new LinkedList<String>();
+            List<String> listOfWords = new ArrayList<>();
             while ((line = br.readLine()) != null) {
                listOfWords.add(line);
             }
@@ -98,9 +98,9 @@ public class Day2Main {
                 map.put(tmpLength, 1);
             }
         }
-        Integer finalInt = map.get(word.length());
+        Integer finalInt = map.get(word.length()-1);
         if(finalInt != null) {
-            common = map.get(word.length());
+            common = map.get(word.length()-1);
         }
         return common;
     }
